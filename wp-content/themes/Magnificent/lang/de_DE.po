@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Magnificent 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-06 18:05+0600\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ann <anochka1985@gmail.com>\n"
+"Language-Team: Ann <anochka1985@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../comments.php:9
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Uploaden Sie bitte diese Seite direkt nicht. Danke!"
+
+#: ../comments.php:13
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Dieser Artikel ist passwortgeschützt. Geben Sie Ihr Passwort ein um die Kommentare anzuzeigen."
+
+#: ../comments.php:25
+msgid "0 Comments"
+msgstr "Keine Kommentare"
+
+#: ../comments.php:25
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: ../comments.php:25
+msgid "Comments"
+msgstr "Kommentare"
+
+#: ../comments.php:44
+msgid "Trackbacks/Pingbacks"
+msgstr "Trackbacks/Pingbacks"
+
+#: ../comments.php:67
+msgid "Leave a Comment"
+msgstr "Einen Kommentar schreiben"
+
+#: ../comments.php:67
+#, php-format
+msgid "Leave a Comment to %s"
+msgstr "Einen Kommentar schreiben zu %s"
+
+#: ../comments.php:73
+msgid "You must be"
+msgstr "Du musst"
+
+#: ../comments.php:73
+msgid "logged in"
+msgstr "eingeloggt"
+
+#: ../comments.php:73
+msgid "to post a comment."
+msgstr "sein um einen Kommentar zu schreiben."
+
+#: ../comments.php:77
+msgid "Logged in as"
+msgstr "Angemeldet als"
+
+#: ../comments.php:77
+msgid "Log out &raquo;"
+msgstr "Abmelden &raquo;"
+
+#: ../comments.php:81
+#: ../page-contact.php:108
+msgid "Name"
+msgstr "Name"
+
+#: ../comments.php:82
+#: ../comments.php:88
+msgid "(required)"
+msgstr "(ben&ouml;tigt)"
+
+#: ../comments.php:87
+msgid "Mail (will not be published)"
+msgstr "Mail (wird nicht ver&ouml;ffentlicht)"
+
+#: ../comments.php:93
+msgid "Website"
+msgstr "Website"
+
+#: ../comments.php:101
+msgid "Submit Comment"
+msgstr "Kommentar absenden"
+
+#: ../footer.php:10
+msgid "Designed by "
+msgstr "Designed by"
+
+#: ../footer.php:10
+msgid "Powered by "
+msgstr "Powered by"
+
+#: ../functions.php:36
+msgid "Primary Menu"
+msgstr ""
+
+#: ../header.php:66
+msgid "Home"
+msgstr "Startseite"
+
+#: ../page-blog.php:34
+#: ../page-blog.php:69
+#: ../page-contact.php:75
+#: ../page-full.php:19
+#: ../page-gallery.php:30
+#: ../page-login.php:27
+#: ../page-search.php:27
+#: ../page-sitemap.php:27
+#: ../page.php:14
+msgid "by"
+msgstr "von"
+
+#: ../page-blog.php:57
+#: ../page-contact.php:98
+#: ../page-full.php:42
+#: ../page-gallery.php:53
+#: ../page-login.php:50
+#: ../page-search.php:50
+#: ../page-search.php:60
+#: ../page-sitemap.php:50
+#: ../page-sitemap.php:54
+#: ../page.php:37
+msgid "Pages"
+msgstr "Seiten"
+
+#: ../page-blog.php:69
+msgid "Posted"
+msgstr "Gepostet"
+
+#: ../page-blog.php:69
+msgid "on"
+msgstr "am"
+
+#: ../page-blog.php:69
+msgid "in"
+msgstr ""
+
+#: ../page-blog.php:69
+#, fuzzy
+msgid "0 comments"
+msgstr "Keine Kommentare"
+
+#: ../page-blog.php:69
+#, fuzzy
+msgid "1 comment"
+msgstr "1 Kommentar"
+
+#: ../page-blog.php:69
+#, fuzzy
+msgid "comments"
+msgstr "Kommentare"
+
+#: ../page-blog.php:89
+msgid "read more"
+msgstr "mehr"
+
+#: ../page-blog.php:108
+#: ../page-contact.php:145
+#: ../page-full.php:43
+#: ../page-gallery.php:92
+#: ../page-login.php:67
+#: ../page-search.php:96
+#: ../page-sitemap.php:87
+#: ../page.php:38
+msgid "Edit this page"
+msgstr "Seite bearbeiten"
+
+#: ../page-contact.php:21
+msgid "Make sure you entered the captcha. "
+msgstr ""
+
+#: ../page-contact.php:24
+msgid "Numbers regenerated."
+msgstr ""
+
+#: ../page-contact.php:25
+msgid "You entered the wrong number in captcha. "
+msgstr ""
+
+#: ../page-contact.php:34
+msgid "Make sure you fill all fields. "
+msgstr ""
+
+#: ../page-contact.php:39
+msgid "Invalid Email. "
+msgstr ""
+
+#: ../page-contact.php:59
+msgid "Thanks for contacting us"
+msgstr ""
+
+#: ../page-contact.php:112
+msgid "Email Address"
+msgstr ""
+
+#: ../page-contact.php:116
+msgid "Subject"
+msgstr ""
+
+#: ../page-contact.php:123
+msgid "Captcha: "
+msgstr ""
+
+#: ../page-contact.php:132
+msgid "Message"
+msgstr ""
+
+#: ../page-contact.php:137
+msgid "Reset"
+msgstr ""
+
+#: ../page-contact.php:138
+#: ../page-search.php:88
+#, fuzzy
+msgid "Submit"
+msgstr "Kommentar absenden"
+
+#: ../page-gallery.php:74
+msgid "Zoom in"
+msgstr ""
+
+#: ../page-gallery.php:75
+#, fuzzy
+msgid "Read more"
+msgstr "mehr"
+
+#: ../page-login.php:56
+msgid "Username"
+msgstr ""
+
+#: ../page-login.php:57
+msgid "Password"
+msgstr ""
+
+#: ../page-login.php:61
+msgid "Not a member?"
+msgstr ""
+
+#: ../page-login.php:61
+msgid "Register today!"
+msgstr ""
+
+#: ../page-search.php:54
+msgid "search this website"
+msgstr ""
+
+#: ../page-search.php:59
+#, fuzzy
+msgid "Posts"
+msgstr "Gepostet"
+
+#: ../page-search.php:63
+msgid "Select a month"
+msgstr ""
+
+#: ../page-sitemap.php:59
+msgid "Categories"
+msgstr ""
+
+#: ../page-sitemap.php:64
+msgid "Tags"
+msgstr "Tags"
+
+#: ../page-sitemap.php:80
+msgid "Authors"
+msgstr ""
+
+#: ../searchform.php:4
+msgid "Search"
+msgstr "Suchen"
+
+#: ../includes/breadcrumbs.php:8
+msgid "Posts Tagged "
+msgstr "Artikel getaggt mit"
+
+#: ../includes/breadcrumbs.php:10
+#: ../includes/breadcrumbs.php:12
+#: ../includes/breadcrumbs.php:14
+msgid "Posts made in"
+msgstr "Gepostet im"
+
+#: ../includes/breadcrumbs.php:16
+msgid "Search results for"
+msgstr "Suchresultate"
+
+#: ../includes/breadcrumbs.php:24
+msgid "Posts by "
+msgstr "Gepostet von"
+
+#: ../includes/featured.php:53
+msgid "Previous"
+msgstr "&Auml;ltere"
+
+#: ../includes/featured.php:54
+msgid "Next"
+msgstr "Neuere"
+
+#: ../includes/infopanel.php:2
+msgid "Related Posts"
+msgstr "Verwandte Artikel"
+
+#: ../includes/infopanel.php:41
+msgid " on "
+msgstr " am"
+
+#: ../includes/infopanel.php:60
+msgid "Share This"
+msgstr "Share"
+
+#: ../includes/no-results.php:3
+msgid "No Results Found"
+msgstr "Nicht gefunden"
+
+#: ../includes/no-results.php:4
+msgid "The page you requested could not be found. Try refining your search, or use the navigation above to locate the post."
+msgstr "Keine Seite gefunden. Etwas anderes Suchen?"
+
+#: ../includes/functions/comments.php:24
+msgid "(Edit)"
+msgstr "(Bearbeiten)"
+
+#: ../includes/functions/comments.php:27
+msgid "Your comment is awaiting moderation."
+msgstr "Dein Kommentar wartet auf die &Uuml;berpr&uuml;fung."
+
+#: ../includes/functions/comments.php:32
+msgid "Reply"
+msgstr "Beantworten"
+

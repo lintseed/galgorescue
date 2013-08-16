@@ -1,0 +1,11 @@
+version 1.1 ( updated 06-10-2013 )
+- Fixed the issue with search form
+	* includes/breadcrumbs.php
+- Fixed the issue with videos not visible in Firefox
+	* js/custom.js
+- Fixed the read more button animation in Firefox
+	* style.css
+
+version 1.0
+
+- initial release

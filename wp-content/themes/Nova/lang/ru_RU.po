@@ -1,0 +1,224 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nova 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-11 19:05+0600\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ann <anochka1985@gmail.com>\n"
+"Language-Team: Ann <anochka1985@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../comments.php:9
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Пожалуйста, не загружайте эту страницу напрямую. Спасибо!"
+
+#: ../comments.php:13
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Эта страница защищена паролем. Введите пароль для просмотра комментариев."
+
+#: ../comments.php:24
+msgid "No Comments"
+msgstr "Нет комментариев"
+
+#: ../comments.php:24
+msgid "One Comment"
+msgstr "Один комментарий"
+
+#: ../comments.php:24
+msgid "Comments"
+msgstr "Коммент."
+
+#: ../comments.php:43
+msgid "Trackbacks/Pingbacks"
+msgstr "Трекбеки/Пинги"
+
+#: ../comments.php:66
+msgid "Leave a Comment"
+msgstr "Оставить комментарий"
+
+#: ../comments.php:66
+#, php-format
+msgid "Leave a Comment to %s"
+msgstr "Оставить комментарий к %s"
+
+#: ../comments.php:72
+msgid "You must be"
+msgstr "Вы должны быть"
+
+#: ../comments.php:72
+msgid "logged in"
+msgstr "зарегистрированы"
+
+#: ../comments.php:72
+msgid "to post a comment."
+msgstr "чтобы комментировать."
+
+#: ../comments.php:76
+msgid "Logged in as"
+msgstr "чтобы комментировать."
+
+#: ../comments.php:76
+msgid "Log out &raquo;"
+msgstr "Выйти &raquo;"
+
+#: ../comments.php:80
+msgid "Name"
+msgstr "Имя"
+
+#: ../comments.php:81
+#: ../comments.php:87
+msgid "(required)"
+msgstr "(обязательное поле)"
+
+#: ../comments.php:86
+msgid "Mail (will not be published)"
+msgstr "Email (не будет виден посетителям)"
+
+#: ../comments.php:92
+msgid "Website"
+msgstr "Сайт"
+
+#: ../comments.php:100
+msgid "submit"
+msgstr "отправить"
+
+#: ../footer.php:14
+msgid "Designed by "
+msgstr "Дизайн"
+
+#: ../footer.php:14
+msgid "Powered by "
+msgstr "Разработано на CMS"
+
+#: ../functions.php:20
+msgid "Primary Menu"
+msgstr ""
+
+#: ../header.php:53
+#: ../epanel/custom_functions.php:204
+msgid "Home"
+msgstr "Главная"
+
+#: ../header.php:67
+msgid "search this site..."
+msgstr "поиск по сайту..."
+
+#: ../home.php:76
+msgid "read more"
+msgstr "далее"
+
+#: ../home.php:99
+msgid "Zoom in"
+msgstr "Увелич. масштаб"
+
+#: ../home.php:100
+msgid "Read more"
+msgstr "Далее"
+
+#: ../page-full.php:45
+#: ../page.php:39
+#: ../single.php:41
+msgid "Pages"
+msgstr "Страницы"
+
+#: ../page-full.php:46
+#: ../page.php:40
+#: ../single.php:42
+msgid "Edit this page"
+msgstr "Редактировать страницу"
+
+#: ../searchform.php:4
+msgid "Search"
+msgstr "Искать"
+
+#: ../includes/breadcrumbs.php:10
+msgid "Posts Tagged "
+msgstr "Посты с тэгами"
+
+#: ../includes/breadcrumbs.php:12
+#: ../includes/breadcrumbs.php:14
+#: ../includes/breadcrumbs.php:16
+msgid "Posts made in"
+msgstr "Посты от"
+
+#: ../includes/breadcrumbs.php:18
+msgid "Search results for"
+msgstr "Результаты поиска по"
+
+#: ../includes/breadcrumbs.php:26
+msgid "Posts by "
+msgstr "Опубликовано"
+
+#: ../includes/entry.php:15
+#, php-format
+msgid "Permanent Link to %s"
+msgstr "Перейти >> %s"
+
+#: ../includes/navigation.php:2
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Предыдущие Записи"
+
+#: ../includes/navigation.php:3
+msgid "Next Entries &raquo;"
+msgstr "Следующие Записи &raquo;"
+
+#: ../includes/no-results.php:3
+msgid "No Results Found"
+msgstr "Ничего не найдено"
+
+#: ../includes/no-results.php:4
+msgid "The page you requested could not be found. Try refining your search, or use the navigation above to locate the post."
+msgstr "Запрашиваемая страница не найдена. Попробуйте уточнить параметры поиска или используйте меню для нахождения страницы."
+
+#: ../includes/postinfo.php:3
+#: ../includes/postinfo.php:8
+msgid "Posted"
+msgstr "Опубликовано"
+
+#: ../includes/postinfo.php:3
+#: ../includes/postinfo.php:8
+msgid "by"
+msgstr " "
+
+#: ../includes/postinfo.php:3
+#: ../includes/postinfo.php:8
+msgid "on"
+msgstr " "
+
+#: ../includes/postinfo.php:3
+#: ../includes/postinfo.php:8
+msgid "in"
+msgstr "в"
+
+#: ../includes/postinfo.php:3
+#: ../includes/postinfo.php:8
+msgid "0 comments"
+msgstr "Нет комментариев"
+
+#: ../includes/postinfo.php:3
+#: ../includes/postinfo.php:8
+msgid "1 comment"
+msgstr "1 коммент."
+
+#: ../includes/postinfo.php:3
+#: ../includes/postinfo.php:8
+msgid "comments"
+msgstr "коммент."
+
+#: ../includes/functions/comments.php:20
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: ../includes/functions/comments.php:25
+msgid "reply"
+msgstr "ответить"
+

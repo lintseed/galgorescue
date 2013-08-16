@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=http://www.w3.org/1999/xhtml dir=ltr lang=de-x-mtfrom-en><head profile=http://gmpg.org/xfn/11><meta http-equiv="X-Translated-By" content="Google"><link href=http://galgorescue.org/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D hreflang=en rel="alternate machine-translated-from"><base href=http://galgorescue.org/page/17/?option=com_user&amp;view=login&amp;return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D /><meta http-equiv=Content-Type content="text/html; charset=UTF-8" /><title> GRIN | Galgo Rescue International Netzwerk </title><link rel=stylesheet href=http://galgorescue.org/wp-content/themes/TheSource/style.css type=text/css media=screen /><link rel=alternate type=application/rss+xml title="G.R.I.N. RSS Feed" href=http://galgorescue.org/feed/ /><link rel=alternate type=application/atom+xml title="G.R.I.N. Atom-Feed" href=http://galgorescue.org/feed/atom/ /><link rel=pingback href=http://galgorescue.org/xmlrpc.php /><!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://galgorescue.org/wp-content/themes/TheSource/css/ie6style.css" />
+	<script type="text/javascript" src="http://galgorescue.org/wp-content/themes/TheSource/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">DD_belatedPNG.fix('img#logo, #cat-nav-left, #cat-nav-right, #search-form, #cat-nav-content, div.top-overlay, .slide .description, div.overlay, a#prevlink, a#nextlink, .slide a.readmore, .slide a.readmore span, .recent-cat .entry .title, #recent-posts .entry p.date, .footer-widget ul li, #tabbed-area ul#tab_controls li span');</script>
+<![endif]--><!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://galgorescue.org/wp-content/themes/TheSource/css/ie7style.css" />
+<![endif]--><!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://galgorescue.org/wp-content/themes/TheSource/css/ie8style.css" />
+<![endif]--><script type=text/javascript>
+	document.documentElement.className = 'js';
+</script><meta content="TheSource v.2.0" name=generator /><link rel=stylesheet id=google-ajax-translation-css href=http://galgorescue.org/wp-content/plugins/google-ajax-translation/google-ajax-translation.css?ver=20100412 type=text/css media=screen /><link rel=stylesheet id=shortcodesStyleSheets-css href=http://galgorescue.org/wp-content/themes/TheSource/epanel/shortcodes/shortcodes.css?ver=3.2.1 type=text/css media=all /><script type=text/javascript src=http://galgorescue.org/wp-includes/js/l10n.js?ver=20101110></script><script type=text/javascript src=http://galgorescue.org/wp-includes/js/jquery/jquery.js?ver=1.6.1></script><link rel=EditURI type=application/rsd+xml title="RSD" href=http://galgorescue.org/xmlrpc.php?rsd /><link rel=wlwmanifest type=application/wlwmanifest+xml href=http://galgorescue.org/wp-includes/wlwmanifest.xml /><link rel=index title="G.R.I.N." href=http://galgorescue.org/ /><meta name=generator content="WordPress 3.2.1" /><script type=text/javascript>
+	// <![CDATA[
+	
+		<!---- et_switcher plugin v2 ---->
+		(function($)
+		{
+			$.fn.et_shortcodes_switcher = function(options)
+			{
+				var defaults =
+				{
+				   slides: '>div',
+				   activeClass: 'active',
+				   linksNav: '',
+				   findParent: true, //use parent elements to define active states
+				   lengthElement: 'li', //parent element, used only if findParent is set to true
+				   useArrows: false,
+				   arrowLeft: 'a#prev-arrow',
+				   arrowRight: 'a#next-arrow',
+				   auto: false,
+				   autoSpeed: 5000,
+				   slidePadding: '',
+				   pauseOnHover: true,
+				   fx: 'fade',
+				   sliderType: ''
+				};
+
+				var options = $.extend(defaults, options);
+
+				return this.each(function()
+				{
+									
+					var slidesContainer = jQuery(this).parent().css('position','relative'),
+						$slides = jQuery(this).css({'overflow':'hidden','position':'relative'}),
+						$slide = $slides.find(options.slides).css({'opacity':'1','position':'absolute','top':'0px','left':'0px','display':'none'}),
+						slidesNum = $slide.length,
+						zIndex = slidesNum,
+						currentPosition = 1,
+						slideHeight = 0,
+						$activeSlide,
+						$nextSlide;
+					
+					if (options.fx === 'slide') {
+						$slide.css({'opacity':'0','position':'absolute','top':'0px','left':'0px','display':'block'});
+					} else {
+						$slide.filter(':first').css({'display':'block'});
+					}
+					
+					if (options.slidePadding != '') $slide.css('padding',options.slidePadding);
+					
+					$slide.each(function(){
+						jQuery(this).css('z-index',zIndex).addClass('clearfix');
+						if (options.fx === 'slide') zIndex--;
+						
+						slideH = jQuery(this).innerHeight();
+						if (slideH > slideHeight) slideHeight = slideH;
+					});
+					$slides.css('height', slideHeight);
+					$slides.css('width', $slides.width());
+									
+					var slideWidth = $slide.width(),
+						slideOuterWidth = $slide.outerWidth();
+					
+					$slide.css('width',slideWidth);
+					
+					$slide.filter(':first').css('opacity','1');
+					
+					if (options.sliderType != '') {
+						if (options.sliderType === 'images') {
+							controllersHtml = '<div class="controllers-wrapper"><div class="controllers"><a href="#" class="left-arrow">Previous</a>';
+							for ($i=1; $i<=slidesNum; $i++) {
+								controllersHtml += '<a class="switch" href="#">'+$i+'</a>';
+							}
+							controllersHtml += '<a href="#" class="right-arrow">Next</a></div><div class="controllers-right"></div></div>';		
+							$controllersWrap = jQuery(controllersHtml).prependTo($slides.parent());
+							jQuery('.controllers-wrapper .controllers').css('width', 65 + 18*slidesNum);
+						}
+						
+						var etimage_width = $slide.width();
+			
+						slidesContainer.css({'width':etimage_width});
+						$slides.css({'width':etimage_width});
+						
+						if (options.sliderType === 'images') {
+							slidesContainer.css({'height':$slide.height()});
+							$slides.css({'height':$slide.height()});
+							
+							var controllers_width = $controllersWrap.width(),
+							leftPosition = Math.round((etimage_width - controllers_width) / 2);
+						
+							$controllersWrap.css({left: leftPosition});
+						}	
+					}
+					
+					
+					if (options.linksNav != '') {
+						var linkSwitcher = jQuery(options.linksNav);
+						
+						var linkSwitcherTab = '';
+						if (options.findParent) linkSwitcherTab = linkSwitcher.parent();
+						else linkSwitcherTab = linkSwitcher;
+						
+						if (!linkSwitcherTab.filter('.active').length) linkSwitcherTab.filter(':first').addClass('active');
+										
+						linkSwitcher.click(function(){
+							
+							var targetElement;
+
+							if (options.findParent) targetElement = jQuery(this).parent();
+							else targetElement = jQuery(this);
+							
+							var orderNum = targetElement.prevAll(options.lengthElement).length+1;
+							
+							if (orderNum > currentPosition) gotoSlide(orderNum, 1);
+							else gotoSlide(orderNum, -1); 
+							
+							return false;
+						});
+					}
+					
+					
+					if (options.useArrows) {
+						var $right_arrow = jQuery(options.arrowRight),
+							$left_arrow = jQuery(options.arrowLeft);
+											
+						$right_arrow.click(function(){				
+							if (currentPosition === slidesNum) 
+								gotoSlide(1,1);
+							else 
+								gotoSlide(currentPosition+1),1;
+							
+							if (options.linksNav != '') changeTab();
+													
+							return false;
+						});
+						
+						$left_arrow.click(function(){
+							if (currentPosition === 1)
+								gotoSlide(slidesNum,-1);
+							else 
+								gotoSlide(currentPosition-1,-1);
+							
+							if (options.linksNav != '') changeTab();
+							
+							return false;
+						});
+						
+					}
+					
+									
+					function changeTab(){
+						if (linkSwitcherTab != '') { 
+							linkSwitcherTab.siblings().removeClass('active');
+							linkSwitcherTab.filter(':eq('+(currentPosition-1)+')').addClass('active');
+						}
+					}
+					
+					function gotoSlide(slideNumber,dir){
+						if ($slide.filter(':animated').length) return;
+					
+						$slide.css('opacity','0');
+																			
+						$activeSlide = $slide.filter(':eq('+(currentPosition-1)+')').css('opacity','1');
+										
+						if (currentPosition === slideNumber) return;
+										
+						$nextSlide = $slide.filter(':eq('+(slideNumber-1)+')').css('opacity','1');
+										
+						if ((currentPosition > slideNumber || currentPosition === 1) && (dir === -1)) {
+							if (options.fx === 'slide') slideBack(500);
+							if (options.fx === 'fade') slideFade(500);
+						} else {
+							if (options.fx === 'slide') slideForward(500);
+							if (options.fx === 'fade') slideFade(500);
+						}
+						
+						currentPosition = $nextSlide.prevAll().length + 1;
+						
+						if (options.linksNav != '') changeTab();
+						
+						if (typeof interval != 'undefined' && options.auto) {
+							clearInterval(interval);
+							auto_rotate();
+						}
+											
+						return false;
+					}
+					
+					
+					if (options.auto) {
+						auto_rotate();
+						var pauseSlider = false;
+					}
+					
+					if (options.pauseOnHover) { 				
+						slidesContainer.hover(function(){
+							pauseSlider = true;
+						},function(){
+							pauseSlider = false;
+						});
+					}
+					
+					function auto_rotate(){
+						
+						interval = setInterval(function(){
+							if (!pauseSlider) { 
+								if (currentPosition === slidesNum) 
+									gotoSlide(1,1);
+								else 
+									gotoSlide(currentPosition+1),1;
+								
+								if (options.linksNav != '') changeTab();
+							}
+						},options.autoSpeed);
+						
+					}
+					
+					function slideForward(speed){
+						$nextSlide.css('left',slideOuterWidth+'px');
+						$activeSlide.animate({left: '-'+slideOuterWidth},speed);
+						$nextSlide.animate({left: 0},speed);
+					}
+					
+					function slideBack(speed){
+						$nextSlide.css('left','-'+slideOuterWidth+'px');
+						$activeSlide.animate({left: slideOuterWidth},speed);
+						$nextSlide.animate({left: 0},speed);
+					}
+					
+					function slideFade(speed){					
+						$activeSlide.css({zIndex: slidesNum}).fadeOut(700);
+						$nextSlide.css({zIndex: (slidesNum+1)}).fadeIn(700);
+					}
+					
+				});
+			} 
+		})(jQuery);
+		<!---- end et_switcher plugin v2 ---->
+		
+		/////// Shortcodes Javascript ///////
+		
+		/// tooltip ///
+		
+		$et_tooltip = jQuery('.et-tooltip');
+		
+		$et_tooltip.live('mouseover mouseout', function(event){
+			if (event.type == 'mouseover') {
+				jQuery(this).find('.et-tooltip-box').animate({ opacity: 'show', bottom: '25px' }, 300);
+			} else {
+				jQuery(this).find('.et-tooltip-box').animate({ opacity: 'hide', bottom: '35px' }, 300);
+			}
+		});
+		
+		/// learn more ///
+		
+		$et_learn_more = jQuery('.et-learn-more .heading-more');
+		
+		$et_learn_more.live('click', function() {
+			if ( jQuery(this).hasClass('open') ) 
+				jQuery(this).removeClass('open');
+			else 
+				jQuery(this).addClass('open');
+				
+			jQuery(this).parent('.et-learn-more').find('.learn-more-content').animate({ opacity: 'toggle', height: 'toggle' }, 300);
+		});
+	
+	// ]]>
+	</script></head><body id=home><iframe src="http://galgorescue.org/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D&lang=en&usg=ALkJrhiAvIiuervk_RI7Cuh5UwOr1rsylQ" width=0 height=0 frameborder=0 style="width:0px;height:0px;border:0px;"></iframe><div id=header-top class=clearfix><div class="container clearfix"><!-- Start Logo --> <a href=http://translate.googleusercontent.com/translate_c?hl=en"><img src=http://hipmotional.com/wordpress/images/grin_logo.png alt="Logo" id=logo /></a> <p id=slogan> <span  > Galgo Rescue International Netzwerk</span> </p><!-- End Logo --><!-- Start Page-menu --><div id=page-menu><div id=p-menu-content><!-- Start Searchbox --><div id=search-form style=float:right;><form method=get id=searchform1 action=http://galgorescue.org><input type=text value=search... name=s id=searchinput /><input type=image src=http://galgorescue.org/wp-content/themes/TheSource/images/search_btn.png id=searchsubmit /></form></div><!-- End Searchbox --></div></div><!-- end #page-menu --><!-- End Page-menu --><div id=cat-nav class=clearfix><div id=cat-nav-left></div><div id=cat-nav-content><ul id=menu-main-nav class="superfish nav clearfix"><li id=menu-item-28 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"> <span  > <a href="http://galgorescue.org/de/" >Nach Hause</a></span> </li><li id=menu-item-29 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"> <span  > <a href="http://galgorescue.org/de/about/" >Über GRIN</a></span> <ul class=sub-menu><li id=menu-item-176 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"> <span  > <a href="http://galgorescue.org/de/about/" >Über GRIN</a></span> </li><li id=menu-item-56 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"> <span  > <a href="http://galgorescue.org/de/about/board-of-directors/" >Vorstand</a></span> </li><li id=menu-item-60 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"> <span  > <a href="http://galgorescue.org/de/about/shelter-aid/" >Shelter Aid</a></span> </li><li id=menu-item-59 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"> <span  > <a href="http://galgorescue.org/de/about/public-awareness/" >Public Awareness</a></span> </li><li id=menu-item-58 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"> <span  > <a href="http://galgorescue.org/de/about/fundraising/" >Fundraising</a></span> </li><li id=menu-item-57 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"> <span  > <a href="http://galgorescue.org/de/about/contact-us/" >Kontakt</a></span> </li></ul></li><li id=menu-item-35 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"> <span  > <a href="http://galgorescue.org/de/spanish-galgo/" >Spanische Galgo</a></span> <ul class=sub-menu><li id=menu-item-175 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"> <span  > <a href="http://galgorescue.org/de/spanish-galgo/" >Spanische Galgo</a></span> </li><li id=menu-item-69 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"> <span  > <a href="http://galgorescue.org/de/spanish-galgo/grim-life-of-the-galgo/" >Grim Leben der Galgo</a></span> </li></ul></li><li id=menu-item-32 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"> <span  > <a href="http://galgorescue.org/de/podencos/" >Podencos</a></span> <ul class=sub-menu><li id=menu-item-177 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"> <span  > <a href="http://galgorescue.org/de/podencos/" >Podencos</a></span> </li><li id=menu-item-68 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"> <span  > <a href="http://galgorescue.org/de/podencos/podenco-shelters/" >Podenco Tierheime</a></span> </li><li id=menu-item-67 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"> <span  > <a href="http://galgorescue.org/de/podencos/living-with-the-loving-podenco/" >Leben mit der liebevollen Podenco</a></span> </li><li id=menu-item-332 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-332"> <span  > <a href="http://www.podencopost.com/">Podenco Beitrag</a></span> </li><li id=menu-item-70 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70"> <span  > <a href="http://podencorescue.wordpress.com/">Podenco Rettung Blog</a></span> </li></ul></li><li id=menu-item-34 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"> <span  > <a href="http://galgorescue.org/de/sighthounds/" >Windhunde</a></span> </li>
+<li id=menu-item-33 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"> <span  > <a href="http://galgorescue.org/de/shelters/" >Tierheime</a></span> </li><li id=menu-item-36 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"> <span  > <a href="http://galgorescue.org/de/you-can-help/" >You Can Help</a></span> <ul class=sub-menu><li id=menu-item-178 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-178"> <span  > <a href="http://galgorescue.org/de/you-can-help/" >You Can Help</a></span> </li><li id=menu-item-89 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"> <span  > <a href="http://galgorescue.org/de/you-can-help/donors-and-supporters/" >Spender und Unterstützer</a></span> </li><li id=menu-item-88 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"> <span  > <a href="http://galgorescue.org/de/you-can-help/send-letters/" >Send Letters</a></span> </li><li id=menu-item-87 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"> <span  > <a href="http://galgorescue.org/de/you-can-help/foster-a-galgo/" >Foster ein Galgo</a></span> </li><li id=menu-item-86 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"> <span  > <a href="http://galgorescue.org/de/you-can-help/coat-makers/" >Coat Makers</a></span> </li><li id=menu-item-85 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"> <span  > <a href="http://galgorescue.org/de/you-can-help/government-contact-info/" >Regierung Kontakt Info</a></span> </li><li id=menu-item-84 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"> <span  > <a href="http://galgorescue.org/de/you-can-help/literature-and-documents/" >Literatur und Dokumente</a></span> </li></ul></li><li id=menu-item-30 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"> <span  > <a href="http://galgorescue.org/de/adoption/" >Adoption</a></span> <ul class=sub-menu><li id=menu-item-179 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179"> <span  > <a href="http://galgorescue.org/de/adoption/" >Galgo Adoption</a></span> </li><li id=menu-item-106 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"> <span  > <a href="http://galgorescue.org/de/adoption/adoption-process/" >Adoptionsverfahren</a></span> </li><li id=menu-item-104 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"> <span  > <a href="http://galgorescue.org/de/adoption/adopting-faqs/" >Die Annahme FAQs</a></span> </li><li id=menu-item-105 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"> <span  > <a href="http://galgorescue.org/de/adoption/available-for-adoption/" >Verfügbar für Adoption</a></span> </li><li id=menu-item-103 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"> <span  > <a href="http://galgorescue.org/de/adoption/adopted-galgos/" >Angenommen Galgos</a></span> </li></ul></li><li id=menu-item-156 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-156"> <span  > <a href="http://galgorescue.org/de/category/news/" >Nachrichten</a></span> </li><li id=menu-item-37 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"> <span  > <a href="http://www.cafepress.com/galgorescueintl">Speichern</a></span> </li></ul></div><!-- end #cat-nav-content --><div id=cat-nav-right></div></div><!-- end #cat-nav --></div><!-- end .container --></div><!-- end #header-top --><!-- Start Featured --><div id=featured><div class=slide style="background: #ffffff url('http://galgorescue.org/wp-content/uploads/2011/10/Protest-Mal.jpg') top center no-repeat;"><div class="container clearfix"><div class=description style="width: 342px;"><h2 class=title> <span  > <a href="http://galgorescue.org/de/2011/10/protest-in-malaga-vs-beginning-of-hunt-season/" >Protest in Malaga vs Beginn der Jagd Saison</a></span> </h2><p class=tagline> <span  > Geschrieben von <a href="http://galgorescue.org/de/author/telma/" title="Beiträge von Telma" rel=author>Telma</a> auf 10 Oktober 2011</span> </p><p> <span  > Malaga Animalistas Protest Jagd Saison eine sehr große Menschenmenge versammelte sich, und viele Menschen, die den Protest Zeuge wurden, was sie hörten zufällig Galgos in ihrem eigenen Land entsetzt.</span> <span  > GRIN ist erfreut, dass unsere Freunde in Spanien auf die Straße gehen, um ihre Stimme ...</span> </p> <span  > <span><a href="http://galgorescue.org/de/2011/10/protest-in-malaga-vs-beginning-of-hunt-season/" class=readmore>Read More</a></span></span> </div><!-- end .description --></div><!-- end .container --><div class=top-overlay></div><div class=overlay></div></div><!-- end .slide --><div class=slide style="background: #ffffff"><div class="container clearfix"><div style="width: 600px; height: 300px; float: left; background: url('http://galgorescue.org/wp-content/uploads/2011/10/Screen-Shot-2011-10-03-at-6.14.52-PM-597x300.jpg') top right no-repeat;"></div><div class=description style="width: 242px;"><h2 class=title> <span  > <a href="http://galgorescue.org/de/2011/10/lucia-the-beautiful-podenca/" >Lucia the Beautiful Podenca</a></span> </h2><p class=tagline> <span  > Geschrieben von <a href="http://galgorescue.org/de/author/chris/" title="Beiträge von Chris" rel=author>Chris</a> am 3. Oktober 2011</span> </p><p> <span  > Lucia, dieses wunderschöne kleine Podenca, fand allein wandern mit schrecklichen Wunden.</span> <span  > Das folgende Video erklärt viel mehr als ich es könnte ... Vielen Dank an die Leute bei Galgos Del Sol und Lucias Pflegefamilie sowie Marylou, die offiziell sein werde Annahme Lucia in. ..</span> </p> <span  > <a href="http://galgorescue.org/de/2011/10/lucia-the-beautiful-podenca/" class=readmore><span>Read More</span></a></span> </div><!-- end .description --></div><!-- end .container --><div class=top-overlay></div><div class=overlay></div></div><!-- end .slide --><div class=slide style="background: #ffffff url('http://galgorescue.org/wp-content/uploads/2011/09/Ken-mimos-1400x300.jpg') top center no-repeat;"><div class="container clearfix"><div class=description style="width: 242px;"><h2 class=title> <span  > <a href="http://galgorescue.org/de/2011/09/kens-story/" >Ken ist Geschichte</a></span> </h2><p class=tagline> <span  > Geschrieben von <a href="http://galgorescue.org/de/author/telma/" title="Beiträge von Telma" rel=author>Telma</a> auf 19 September 2011</span> </p><p> <span  > Es ist wichtig, bestimmte Geschichten von Hunden, die einen Willen zum Leben haben und der Menschen, die ihnen helfen, ein Leben in Liebe, Fürsorge und Würde zu erzählen.</span> <span  > Dies ist Ken Geschichte.</span> <span  > Dedicated to Silvia Bordetas Gil und Tina Solerna 9. Februar 2011 - Ken ist ein Galgo, der in der verlassen wurde ...</span> </p> <span  > <a href="http://galgorescue.org/de/2011/09/kens-story/" class=readmore><span>Read More</span></a></span> </div><!-- end .description --></div><!-- end .container --><div class=top-overlay></div><div class=overlay></div></div><!-- end .slide --></div><!-- end #featured --><!-- End Featured --><div id=featured-control><div class=container> <span  > <a id=prevlink href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" >Previous</a> <a id=nextlink href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" >Next</a></span> </div></div><!-- end #featured-control --><div id=content><div class=container><div id=main-content-wrap><div id=main-content class=clearfix><div id=recent-posts class=clearfix><h4 class=title> <span  > Aktuelle Beiträge</span> </h4><div class="entry clearfix"><h2 class=title> <span  > <a href="http://galgorescue.org/de/2010/07/sevilla_2010_walk_with_galgos_and_podencos_in_sevilla_spain/" >Sevilla 2010 - Gehen Sie mit Galgos und Podencos in Sevilla, Spanien</a></span> </h2> <span  > <strong>21 Juli 2010</strong></span> <div class="entry-content clearfix"><p> <span  > Spanische Galgo Gruppe Galgos 112 und DDEVIDA organisiert einen Spaziergang mit Galgos und Podencos in der Stadt Sevilla, die auf 27. Juni 2010 abgehalten wurde!</span> <span  > Das Ziel war zu zeigen, dass Galgos und Podencos wundervolle Haustiere zu machen und das Leben der Status der spanischen Jagdhunde, dass der Begleiter Haustiere.</span> <span  > Wie man auf den Fotos sehen kann, hatten alle eine großartige Zeit.</span> <span  > GRIN ist ...</span> </p></div><!-- end .entry-content --><div class="post-meta clearfix"><p class=meta-info> <span  > Posted in <a href="http://galgorescue.org/de/category/news/" title="Alle Beiträge in News" rel="category tag">Aktuelles</a> | <a href="http://galgorescue.org/de/2010/07/sevilla_2010_walk_with_galgos_and_podencos_in_sevilla_spain/#respond" title="Ihre Meinung zu Sevilla 2010 - Gehen Sie mit Galgos und Podencos in Sevilla, Spanien">0 Kommentare</a> | 46 Aufrufe</span> </p> <span  > <a href="http://galgorescue.org/de/2010/07/sevilla_2010_walk_with_galgos_and_podencos_in_sevilla_spain/" class=readmore><span>Read More</span></a></span> </div></div><!-- end .entry --><div class="entry clearfix"><h2 class=title> <span  > <a href="http://galgorescue.org/de/2010/07/chica_the_galga/" >Chica die Galga</a></span> </h2> <span  > <strong>21 Juli 2010</strong></span> <div class="entry-content clearfix"><p> <span  > Hallo GRIN Unterstützer: GRIN konnte mit Vera Thorenaar Reddering in Malaga Spanien und Greyhounds Rescue-Holland zusammenarbeiten.</span> <span  > Vera fördert seit ein Galgo zu einer Zeit, bereitet sie für den Übergang zu einem Zuhause für immer und dann bewegte sie an Holland mit der Hilfe von Greyhound Rescue-Holland.</span> <span  > Wir fühlen uns geehrt, Teil davon zu sein ...</span> </p></div><!-- end .entry-content --><div class="post-meta clearfix"><p class=meta-info> <span  > Posted in <a href="http://galgorescue.org/de/category/news/" title="Alle Beiträge in News" rel="category tag">Aktuelles</a> | <a href="http://galgorescue.org/de/2010/07/chica_the_galga/#respond" title="Ihre Meinung zu Chica die Galga">0 Kommentare</a> | 56 Aufrufe</span> </p> <span  > <a href="http://galgorescue.org/de/2010/07/chica_the_galga/" class=readmore><span>Read More</span></a></span> </div></div><!-- end .entry --><div class="entry clearfix"><h2 class=title> <span  > <a href="http://galgorescue.org/de/2010/07/the_galgo_international_rescue_network_s_july_auction_starts_july_13th_at_carpe_canem_/" >Der Galgo International Rescue Netzwerk im Juli Auktion beginnt am 13. Juli Carpe Canem!</a></span> </h2> <span  > <strong>13 Juli 2010</strong></span> <div class="entry-content clearfix"><p> <span  > Über 130 unglaubliche, einzigartige, individuelle und auch sonst super Artikel wird in dieser Auktion ab Dienstag zu sehen sein, 13. Juli um 9 Uhr EDT besuchen Sie bitte Carpe Canem anzeigen und markieren Sie diese fantastische Goodies!</span> <span  > 100% des Erlöses wird von GRIN verwendet werden, um zukünftige Tierheim Hilfsprojekte und Bemühungen profitieren - bitte helfen Sie unterstützen die Galgos in Spanien mit ...</span> </p></div><!-- end .entry-content --><div class="post-meta clearfix"><p class=meta-info> <span  > Posted in <a href="http://galgorescue.org/de/category/news/" title="Alle Beiträge in News" rel="category tag">Aktuelles</a> | <a href="http://galgorescue.org/de/2010/07/the_galgo_international_rescue_network_s_july_auction_starts_july_13th_at_carpe_canem_/#respond" title="Ihre Meinung zu Der Galgo International Rescue Netzwerk im Juli Auktion beginnt am 13. Juli Carpe Canem!">0 Kommentare</a> | 60 Aufrufe</span> </p> <span  > <a href="http://galgorescue.org/de/2010/07/the_galgo_international_rescue_network_s_july_auction_starts_july_13th_at_carpe_canem_/" class=readmore><span>Read More</span></a></span> </div></div><!-- end .entry --><div class="entry clearfix"><h2 class=title> <span  > <a href="http://galgorescue.org/de/2010/07/t_shirt_fundraiser_for_scooby/" >T-Shirt Fundraiser für Scooby</a></span> </h2> <span  > <strong>8. Juli 2010</strong></span> <div class="entry-content clearfix"><p>
+<span  > Scooby Medina ist das größte Tierheim in Spanien, mit über 600 Tieren, meist Hunde, die alle verzweifelt braucht ewig Häuser.</span> <span  > Sie haben auch eine große Nahrungsmittelkrise, als die freie Hühnerschlachtkörpern die eine regelmäßige Quelle der Nahrung für die Hunde waren nun verboten - aus gesundheitlichen Gründen!</span> <span  > Sie können mehr über die Nahrungsmittelkrise lesen Sie hier.</span> <span  > Um ...</span> </p></div><!-- end .entry-content --><div class="post-meta clearfix"><p class=meta-info> <span  > Posted in <a href="http://galgorescue.org/de/category/news/" title="Alle Beiträge in News" rel="category tag">Aktuelles</a> | <a href="http://galgorescue.org/de/2010/07/t_shirt_fundraiser_for_scooby/#respond" title="Ihre Meinung zu T-Shirt Fundraiser für Scooby">0 Kommentare</a> | 30 Aufrufe</span> </p> <span  > <span><a href="http://galgorescue.org/de/2010/07/t_shirt_fundraiser_for_scooby/" class=readmore>Read More</a></span></span> </div></div><!-- end .entry --><div class="entry clearfix"><h2 class=title> <span  > <a href="http://galgorescue.org/de/2010/07/update_oco_makes_it_to_france_/" >Update: OCO - Makes It To France?</a></span> </h2> <span  > <strong>1. Juli 2010</strong></span> <div class="entry-content clearfix"><p> <span  > GRIN Supporters sind Sie Teil dieser Geschichte!</span> <span  > Wir freuen uns, dass wir in der Lage, einen Beitrag zur Finanzierung der Beförderung von Oco von Spanien nach Frankreich, wo er jetzt eine Chance auf ein besseres Leben aus den Fängen des gefürchteten Jäger waren .. hier ist das, was sein Pflegevater Mütter Hallo sagte Charl, Ich wollte Ihnen eine Email mit Fotos von Oco Reise zurück zu unserem Haus, nur ...</span> </p></div><!-- end .entry-content --><div class="post-meta clearfix"><p class=meta-info> <span  > Posted in <a href="http://galgorescue.org/de/category/news/" title="Alle Beiträge in News" rel="category tag">Aktuelles</a> | <a href="http://galgorescue.org/de/2010/07/update_oco_makes_it_to_france_/#respond" title="Ihre Meinung zu Update: OCO - Makes It To France?">0 Kommentare</a> | 30 Aufrufe</span> </p> <span  > <a href="http://galgorescue.org/de/2010/07/update_oco_makes_it_to_france_/" class=readmore><span>Read More</span></a></span> </div></div><!-- end .entry --><div class=pagination><div class=alignleft> <span  > <a href="http://galgorescue.org/de/page/18/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D" >«Ältere Einträge</a></span> </div><div class=alignright> <span  > <a href="http://galgorescue.org/de/page/16/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D" >Next Entries »</a></span> </div></div></div><!-- end #recent-posts --><div id=sidebar><div id=firstcol><div id=jquery-archive-list-widget class="widget widget_display_jQuery_archives"><h4 class=widgettitle> <span  > <span>News-Archiv</span></span> </h4><div class=widgetcontent><ul><li class=jaw_years> <span  > <a class=jaw_years href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#jal" ><span class=jaw_symbol>►</span> 2011 (40)</a></span> <ul><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2011/10/" >Oktober (3)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2011/09/" >September (6)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2011/08/" >August (9)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2011/07/" >Juli (9)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2011/06/" >Juni (3)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2011/05/" >Mai (5)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2011/03/" >März (3)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2011/01/" >Januar (2)</a></span> </li></ul></li><li class=jaw_years> <span  > <a class=jaw_years href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#jal" ><span class=jaw_symbol>►</span> 2010 (82)</a></span> <ul><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/12/" >Dezember (7)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/11/" >November (10)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/10/" >Oktober (13)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/09/" >September (8)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/08/" >August (6)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/07/" >Juli (8)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/06/" >Juni (7)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/05/" >Mai (4)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/04/" >April (6)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/03/" >März (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/02/" >Februar (3)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2010/01/" >Januar (8)</a></span> </li></ul></li><li class=jaw_years> <span  > <a class=jaw_years href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#jal" ><span class=jaw_symbol>►</span> 2009 (67)</a></span> <ul><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/12/" >Dezember (6)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/11/" >November (7)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/10/" >Oktober (18)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/09/" >September (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/08/" >August (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/07/" >Juli (18)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/05/" >Mai (1)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/04/" >April (7)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/03/" >März (3)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2009/01/" >Januar (3)</a></span> </li></ul></li><li class=jaw_years> <span  > <a class=jaw_years href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#jal" ><span class=jaw_symbol>►</span> 2008 (45)</a></span> <ul><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/12/" >Dezember (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/11/" >November (5)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/10/" >Oktober (1)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/09/" >September (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/08/" >August (4)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/07/" >Juli (3)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/06/" >Juni (3)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/05/" >Mai (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/04/" >April (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/03/" >März (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/02/" >Februar (7)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2008/01/" >Januar (12)</a></span> </li></ul></li><li class=jaw_years> <span  > <a class=jaw_years href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#jal" ><span class=jaw_symbol>►</span> 2007 (56)</a></span> <ul><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2007/12/" >Dezember (4)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2007/09/" >September (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2007/08/" >August (5)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2007/07/" >Juli (2)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2007/06/" >Juni (37)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2007/05/" >Mai (4)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2007/04/" >April (1)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2007/02/" >Februar (1)</a></span> </li></ul></li><li class=jaw_years> <span  > <a class=jaw_years href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#jal" ><span class=jaw_symbol>►</span> 2006 (3)</a></span> <ul><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2006/10/" >Oktober (1)</a></span> </li><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2006/02/" >Februar (2)</a></span> </li></ul></li><li class=jaw_years> <span  > <a class=jaw_years href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#jal" ><span class=jaw_symbol>►</span> 2005 (1)</a></span> <ul><li class=jaw_months style=display:none;> <span  > <a class=jaw_months href="http://galgorescue.org/de/2005/10/" >Oktober (1)</a></span> </li></ul></li></ul></div><!-- end .widget-content --></div><!-- end .widget --><div id=better-blogroll class="widget widget_betterblogroll"><h4 class=widgettitle> <span  > <span>Gruppen GRIN Unterstützt</span></span> </h4><div class=widgetcontent><ul><li><span  > <a href="http://www.spaansehonden.com/"title="Saskia Rinia van Nauta ist der Vorsitzende der Stiftung Acogida San Anton, die im Jahr 2006 erhöht wurde, um den Schutz in den Süden Spaniens, Rancho Pamplina, Villamartin befindet unterstützen. Das Tierheim nimmt in Hunderten von Galgos jedes Jahr vor allem nach dem">San Anton Shelter</a></span> </li><li> <span  > <a href="http://www.apahrescue.org/"title="Das Hotel liegt in Pilar De La Horadada, Costa Blanco. Email info@apah.eu.">APAH - Asociacion Protectora Animales Horadada</a></span> </li><li> <span  > <a href="http://www.refugiokimba.org/"title="Das Hotel liegt in Cadiz, Espana. Kimba rettet Galgos aus kommunalen Schutz der Villamartin (60 Meilen von der Kimba Obdach) und hat 140 oder mehr Hunde zu jeder Zeit, rettet Katzen. Kimba ist ein in Privatbesitz befindliches Zuflucht und erhält keine staatlichen assistanc">REFUGIO KIMBA</a></span> </li><li> <span  > <a href="http://www.asociacionrecal.es/"title="Das Hotel liegt in Almendralejo. Die Recal Zuflucht ist spezialisiert auf Galgos und ist insofern einzigartig, sie haben eine anständige Beziehung mit Jägers associatons entwickelt. Email: recalanimales@hotmail.com. Ansprechpartner: Mada Sanguino Adresse: Avenida Rafael Alberti 13, 06">Recal Extremadura Arbeiten zur Sensibilisierung</a></span> </li><li> <span  > <a href="http://www.protectoraosona.com/"title="Refuge ist in Vic und wurde vor ca. 10 Jahren gegründet. Rescues Galgos und auch gespeichert über 200 Windhunde, wenn Plaza Espana Rennstrecke geschlossen. Empfängt Hilfe aus Europa und wird von Freiwilligen gepflegt; jüngsten verfügbaren Daten - im Jahr 2004 sie Schutz">DEFENSA DELS ANIMALS D&#39;OSONA</a></span> </li><li> <span  > <a target=_blank href="http://www.amigosdelosgalgos.org/"title="Gegründet von Nuria Blanco de Andres im Jahr 1997. Works with / empfängt Hilfe aus: Greyhound Rescue-Holland, Levriers en détresse (Frankreich), GIN, Greyhounds in Need (GIN), England; Greyhounds in Nood Belgien. Es ist mit GPA Central Texas durch die Paws Acro gepaart">AMIGOS DE LOS Galgos</a></span> </li><li> <span  > <a href="http://www.degalgos.org/"title="Das Hotel liegt in Barcelona Spanien ist DeGalgos eine gemeinnützige Vereinigung, die 2008 gegründet wurde, obwohl die Gründer in Galgo Rettung gearbeitet haben für mehr als vier Jahren selbstständig und mit anderen Verbänden. Diese Gruppe nutzt Pflegefamilien und arbeiten wit">DeGalgos</a></span> </li><li> <a target=_blank href="http://www.galgoconnectionspain.org/index3.html"title=""><img src=http://hipmotional.com/wordpress/images/icon_connectionspain.png alt="Hier klicken, um Galgo Anschluss Spanien besuchen" /><br /></a> <span  > <a target=_blank href="http://www.galgoconnectionspain.org/index3.html"title="">Galgo Anschluss Spanien</a></span> </li><li> <a target=_blank href="http://www.scoobymedina.org/"title="Scooby ist ein führender Verein sich mit der Rettung von Galgos (spanische Windhunde) in Spanien und das größte Tierheim des Landes für alle Arten von Tieren."><img src=http://hipmotional.com/wordpress/images/icon_Scooby.gif alt="Klicken Sie auf ScoobyMedina.org Besuch" /><br /></a> <span  > <a target=_blank href="http://www.scoobymedina.org/"title="Scooby ist ein führender Verein sich mit der Rettung von Galgos (spanische Windhunde) in Spanien und das größte Tierheim des Landes für alle Arten von Tieren.">ScoobyMedina.org</a></span> </li><li> <span  > <a href="http://www.perritosdesegovia.com/"title="Das Hotel liegt in Segovia. Email: info@perritosdesegovia.com oder blasdog@yahoo.es.">PROTECTA de Segovia</a></span> </li></ul></div><!-- end .widget-content --></div><!-- end .widget --><div id=text-5 class="widget widget_text"><h4 class=widgettitle> <span  > <span>GalgoNews.com</span></span> </h4><div class=widgetcontent><div class=textwidget> <a href="http://galgonews.com/"target=_blank><img src=http://hipmotional.com/wordpress/images/galgoNews.png width=100% alt="Galgo News" title="Galgo Aktuelles" /></a> </div></div><!-- end .widget-content --></div><!-- end .widget --><div id=text-4 class="widget widget_text"><h4 class=widgettitle> <span  > <span>Wilbur und seine Freunde</span></span> </h4><div class=widgetcontent><div class=textwidget> <a href="http://www.112carlotagalgos.blogspot.com/"target=_blank><img src=http://hipmotional.com/wordpress/wp-content/uploads/2010/12/charlottes-web-pic.jpg width=100% alt="Charlotte's Web" title="Wilbur und seine Freunde" /></a> </div></div><!-- end .widget-content --></div><!-- end .widget --></div><!-- end #firstcol --><div id=secondcol><div id=global-translator class="widget widget_global_translator"><h4 class=widgettitle> <span  > <span>Übersetzer</span></span> </h4><div class=widgetcontent>
+<!--FLAG_BAR_BEGIN--><div id="translation_bar"><map id="gltr_flags_map" name="gltr_flags_map"><area shape='rect' coords='0,0,16,11' href='http://galgorescue.org/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D' id='flag_en'   title='English'/><area shape='rect' coords='20,0,36,11' href='http://galgorescue.org/it/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D' id='flag_it'   title='Italian'/><area shape='rect' coords='40,0,56,11' href='http://galgorescue.org/pt/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D' id='flag_pt'   title='Portuguese'/><area shape='rect' coords='60,0,76,11' href='http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D' id='flag_de'   title='German'/><area shape='rect' coords='80,0,96,11' href='http://galgorescue.org/fr/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D' id='flag_fr'   title='French'/><area shape='rect' coords='100,0,116,11' href='http://galgorescue.org/es/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D' id='flag_es'   title='Spanish'/><area shape='rect' coords='120,0,136,11' href='http://galgorescue.org/nl/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D' id='flag_nl'   title='Dutch'/></map><img style='border:0px;' src='http://galgorescue.org/wp-content/plugins/global-translator/gltr_image_map.png' usemap='#gltr_flags_map'/></div><div id="transl_sign"></div><!--FLAG_BAR_END-->
+</div><!-- end .widget-content --></div><!-- end .widget --><div id=aboutmewidget-3 class="widget widget_aboutmewidget"><h4 class=widgettitle> <span  > <span>Über GRIN</span></span> </h4><div class=widgetcontent><div class=clearfix><img src=http://galgorescue.org/wp-content/themes/TheSource/timthumb.php?src=/wp-content/uploads/2010/11/shelter-sponsor.jpg&amp;h=74&amp;w=74&amp;zc=1 id=about-image alt="Wir über uns Bild" /><p> <span  > Der Galgo Rescue International Network (GRIN) wurde gegründet, um eine Beziehung zwischen dem galgo Unterstände in Spanien und Tierliebhaber in den Vereinigten Staaten und der ganzen Welt zu etablieren.</span> <span  > Unsere Liebe von Windhunden und die Sorge um ihre Notlage zog es uns, ihre Cousins ​​- die Galgos.</span> <br /><br /> <span  > In enger Zusammenarbeit mit dem spanischen Galgo Unterstände, wirft GRIN Bewusstsein für die galgo Notlage durch internationale Aufklärungskampagnen und Fundraising.</span> <span  > Wir haben auch Hilfe Schutzräume und hilft bei Adoptionen für verlagert Galgos in den USA.</span> <br /><br /> <span  > Galgo Rescue International Network ist eine 501 (c) (3) Non-Profit-Tierschutzorganisation ausschließlich von Freiwilligen betrieben und wurde 2006 von Abby Christman gegründet.</span> <span  > GRIN Ziele werden auf praktische Hilfe und Versorgung der spanischen Schutzräume zu schaffen, um Mittel für Spanisch Unterstände, zu erhöhen, um als Adoptionsvermittlungsstelle für eine kleine Anzahl von Hunden in die USA aus Spanien zu handeln und Wandel in der Behandlung der Galgos durch inspirieren öffentliche Informations-/ Aufklärungskampagnen.</span> <span  > Vorstandsmitglieder sind: Telma Shaw West Coast, Abby Christman, Christie Jacobs, Kim Malone, Denver Area und Chris Plaskett, East Coast.</span> </p></div><!-- end about me section --></div><!-- end .widget-content --></div><!-- end .widget --><div id=text-3 class="widget widget_text"><h4 class=widgettitle> <span  > <span>Unterstützung GRIN</span></span> </h4><div class=widgetcontent><div class=textwidget><p> <span  > GRIN ist eine 501 (c) (3) Non-Profit-Tierschutzorganisation ausschließlich von Freiwilligen betrieben, und Ihre Spenden sind steuerlich voll absetzbar.</span> </p><form action=https://www.paypal.com/cgi-bin/webscr method=post><input type=hidden name=cmd value=_donations><input type=hidden name=business value=galgorescue@yahoo.com><input type=hidden name=item_name value="Donation to Galgo Rescue International Network (G.R.I.N.)"><input type=hidden name=item_number value="Galgo Rescue International Network (G.R.I.N.)"><input type=hidden name=no_shipping value=0><input type=hidden name=no_note value=1><input type=hidden name=currency_code value=USD><input type=hidden name=tax value=0><input type=hidden name=bn value=PP-DonationsBF><input type=image src=https://www.paypal.com/en_US/i/btn/x-click-butcc-donate.gif border=0 name=submit alt="PayPal - The safer, easier way to pay online!"><img alt="" border=0 src=https://www.paypal.com/en_US/i/scr/pixel.gif width=1 height=1></form><p> <a target=_blank href=https://www.networkforgood.org/donation/MakeDonation.aspx?ORGID2=205010150><img border=0 src=http://www.galgorescue.org/images/stories/network_for_good.png width=143 height=57></a> </p> <span  > <b>Vielen Dank für Ihre Unterstützung.</b></span> <b><br></b> <span  > <b>Gemeinsam können wir einen Unterschied machen.</b></span> </div></div><!-- end .widget-content --></div><!-- end .widget --><div class="widget random"><h4 class=widgettitle> <span  > <span>Zufalls-News</span></span> </h4><ul><li class=clearfix> <span  ></span> <span class=right><span class=title><a href="http://galgorescue.org/de/2008/11/massive_delivery_of_supplies_to_seven_spanish_shelters/" >Massiver Bevorratung von Seven Spanish Tierheime</a></span> <span class=postinfo>auf 2 November 2008 Posted</span></span></span> </li><li class=clearfix> <span  ></span> <span class=right><a href="http://galgorescue.org/de/2007/12/hidalgo_s_journey/" ><span class=title>Hidalgo Die Reise</span></a> <span class=postinfo>auf 7 Dezember 2007 Posted</span></span></span> </li><li class=clearfix> <span  ></span> <span class=right><a href="http://galgorescue.org/de/2007/06/amistad/" ><span class=title>Amistad</span></a> <span class=postinfo>auf 13 Juni 2007 Posted</span></span></span> </li></ul></div><!-- end .widget --></div><!-- end #secondcol --></div><!-- end sidebar --></div><!-- end #main-content --></div><!-- end #main-content-wrap --></div><!-- end .container --></div><!-- end #content --><div id=content-bottom><div class=container></div></div><div id=footer><div class="container clearfix"><div class=clear></div></div><!--end .container --></div><!-- end #footer --><div id=footer-bottom><div class="container clearfix"><ul id=menu-footer-nav class=bottom-nav><li id=menu-item-45 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"> <span  > <a href="http://galgorescue.org/de/site-map/" >Site Map</a></span> </li><li id=menu-item-46 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"> <span  > <a href="http://galgorescue.org/de/about/contact-us/" >Kontakt</a></span> </li></ul><p id=copyright> <span  > Designed by <a href="http://www.elegantthemes.com/"title="Elegant Themes">Elegant Themes</a> | Powered by <a href="http://www.wordpress.org/">Wordpress</a></span> </p></div><!--end .container --></div> <!-- end #footer-bottom --><script type=text/javascript src=http://galgorescue.org/wp-content/themes/TheSource/js/superfish.js></script><script type=text/javascript>
+	//<![CDATA[
+		jQuery.noConflict();
+	
+		jQuery('ul.superfish, #page-menu ul.nav').superfish({ 
+			delay:       200,                            // one second delay on mouseout 
+			animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation 
+			speed:       'fast',                          // faster animation speed 
+			autoArrows:  true,                           // disable generation of arrow mark-up 
+			dropShadows: false                            // disable drop shadows 
+		});
+		
+		jQuery('ul.nav > li > a.sf-with-ul').parent('li').addClass('sf-ul'); 
+		
+		et_search_bar();
+		et_footer_improvements('#footer .footer-widget');
+		
+		<!---- et_switcher plugin v1.3 ---->
+		(function($)
+		{
+			$.fn.et_switcher = function(options)
+			{
+				var defaults =
+				{
+				   slides: '>div',
+				   activeClass: 'active',
+				   linksNav: '',
+				   findParent: true, //use parent elements in defining lengths
+				   lengthElement: 'li', //parent element, used only if findParent is set to true
+				   useArrows: false,
+				   arrowLeft: 'prevlink',
+				   arrowRight: 'nextlink',
+				   auto: false,
+				   autoSpeed: 5000
+				};
+
+				var options = $.extend(defaults, options);
+
+				return this.each(function()
+				{
+					var slidesContainer = jQuery(this);
+					slidesContainer.find(options.slides).hide().end().find(options.slides).filter(':first').css('display','block');
+			 
+					if (options.linksNav != '') { 
+						var linkSwitcher = jQuery(options.linksNav);
+										
+						linkSwitcher.click(function(){
+							var targetElement;
+
+							if (options.findParent) targetElement = jQuery(this).parent();
+							else targetElement = jQuery(this);
+
+							if (targetElement.hasClass('active')) return false;
+
+							targetElement.siblings().removeClass('active').end().addClass('active');
+
+							var ordernum = targetElement.prevAll(options.lengthElement).length;
+											
+							slidesContainer.find(options.slides).filter(':visible').hide().end().end().find(options.slides).filter(':eq('+ordernum+')').stop().fadeIn(700);
+							return false;
+						});
+					};
+					
+					jQuery('#'+options.arrowRight+', #'+options.arrowLeft).click(function(){
+					  
+						var slideActive = slidesContainer.find(options.slides).filter(":visible"),
+							nextSlide = slideActive.next(),
+							prevSlide = slideActive.prev();
+
+						if (jQuery(this).attr("id") == options.arrowRight) {
+							if (nextSlide.length) {
+								var ordernum = nextSlide.prevAll().length;                        
+							} else { var ordernum = 0; }
+						};
+
+						if (jQuery(this).attr("id") == options.arrowLeft) {
+							if (prevSlide.length) {
+								var ordernum = prevSlide.prevAll().length;                  
+							} else { var ordernum = slidesContainer.find(options.slides).length-1; }
+						};
+
+						slidesContainer.find(options.slides).filter(':visible').hide().end().end().find(options.slides).filter(':eq('+ordernum+')').stop().fadeIn(700);
+
+						if (typeof interval != 'undefined') {
+							clearInterval(interval);
+							auto_rotate();
+						};
+
+						return false;
+					});   
+
+					if (options.auto) {
+						auto_rotate();
+					};
+					
+					function auto_rotate(){
+						interval = setInterval(function(){
+							var slideActive = slidesContainer.find(options.slides).filter(":visible"),
+								nextSlide = slideActive.next();
+						 
+							if (nextSlide.length) {
+								var ordernum = nextSlide.prevAll().length;                        
+							} else { var ordernum = 0; }
+						 
+							if (options.linksNav === '') 
+								jQuery('#'+options.arrowRight).trigger("click");
+							else 		 		
+								linkSwitcher.filter(':eq('+ordernum+')').trigger("click");
+						},options.autoSpeed);
+					};
+				});
+			}
+		})(jQuery);
+		
+		
+		var $featuredArea = jQuery('#featured'),
+			$all_tabs = jQuery('#all_tabs');
+		
+		if ($featuredArea.length) {
+			$featuredArea.et_switcher({
+				useArrows: true 		
+			});
+		};
+				
+		if ($all_tabs.length) {
+			$all_tabs.et_switcher({
+				linksNav: 'ul#tab_controls li a'
+			});
+		}; 
+
+				
+		<!---- Footer Improvements ---->
+		function et_footer_improvements($selector){
+			var $footer_widget = jQuery($selector);
+		
+			if (!($footer_widget.length == 0)) {
+				$footer_widget.each(function (index, domEle) {
+					if ((index+1)%4 == 0) jQuery(domEle).addClass("last").after("<div class='clear'></div>");
+				});
+			};
+		};
+		
+		<!---- Search Bar Improvements ---->
+		function et_search_bar(){
+			var $searchform = jQuery('#cat-nav div#search-form'),
+				$searchinput = $searchform.find("input#searchinput"),
+				searchvalue = $searchinput.val();
+				
+			$searchinput.focus(function(){
+				if (jQuery(this).val() === searchvalue) jQuery(this).val("");
+			}).blur(function(){
+				if (jQuery(this).val() === "") jQuery(this).val(searchvalue);
+			});
+		};
+		
+	//]]>	
+	</script><div id=translate_popup style="display: none;"><table class=translate_links><tr><td valign=top> <a class=languagelink lang=en xml:lang=en href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Englisch"><img class="translate_flag en" src=http://galgorescue.org/wp-content/plugins/google-ajax-translation/transparent.gif alt="Englisch" width=16 height=11 /></a> <span  > <a class=languagelink lang=en xml:lang=en href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Englisch">Englisch</a></span> <a class=languagelink lang=de xml:lang=de href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Deutsch"><img class="translate_flag de" src=http://galgorescue.org/wp-content/plugins/google-ajax-translation/transparent.gif alt="English" width=16 height=11 /></a> <span  > <a class=languagelink lang=de xml:lang=de href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Deutsch">English</a></span> <a class=languagelink lang=es xml:lang=es href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Spanisch"><img class="translate_flag es" src=http://galgorescue.org/wp-content/plugins/google-ajax-translation/transparent.gif alt="español" width=16 height=11 /></a> <span  > <a class=languagelink lang=es xml:lang=es href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Spanisch">español</a></span> </td><td valign=top> <a class=languagelink lang=fr xml:lang=fr href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Französisch"><img class="translate_flag fr" src=http://galgorescue.org/wp-content/plugins/google-ajax-translation/transparent.gif alt="français" width=16 height=11 /></a> <span  > <a class=languagelink lang=fr xml:lang=fr href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Französisch">français</a></span> <a class=languagelink lang=it xml:lang=it href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Italienisch"><img class="translate_flag it" src=http://galgorescue.org/wp-content/plugins/google-ajax-translation/transparent.gif alt="italiano" width=16 height=11 /></a> <span  > <a class=languagelink lang=it xml:lang=it href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Italienisch">italiano</a></span> <a class=languagelink lang=nl xml:lang=nl href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Holländer"><img class="translate_flag nl" src=http://galgorescue.org/wp-content/plugins/google-ajax-translation/transparent.gif alt="Nederlands" width=16 height=11 /></a> <span  > <a class=languagelink lang=nl xml:lang=nl href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Holländer">Nederlands</a></span> </td><td valign=top> <a class=languagelink lang=pt xml:lang=pt href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Portugiesisch"><img class="translate_flag pt" src=http://galgorescue.org/wp-content/plugins/google-ajax-translation/transparent.gif alt="português" width=16 height=11 /></a> <span  > <a class=languagelink lang=pt xml:lang=pt href="http://galgorescue.org/de/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D#" title="Portugiesisch">português</a> <a class=google_branding rel=nofollow href="http://translate.google.com/translate?sl=auto&tl=en&u=galgorescue.org/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D"title="übersetzen Seite">bereitgestellt von</a></span> <a class=google_branding rel=nofollow href="http://translate.google.com/translate?sl=auto&tl=en&u=galgorescue.org/page/17/?option=com_user&view=login&return=aHR0cDovL3d3dy5nYWxnb3Jlc2N1ZS5vcmcvaG9tZS9hZG1pbi1sb2dpbg%3D%3D"title="übersetzen Seite"><img src=http://www.google.com/uds/css/small-logo.png alt=Google title="" width=51 height=15 /></a> </td></tr></table></div><script type=text/javascript src=http://galgorescue.org/wp-content/plugins/google-ajax-translation/jquery.translate-1.4.1.min.js?ver=1.4.1></script><script type=text/javascript src=http://galgorescue.org/wp-content/plugins/jquery-archive-list-widget/jquery-archive-list.js.php?ex_sym=%E2%96%BA&#038;con_sym=%E2%96%BC&#038;fx_out=slideUp&#038;fx_in=slideDown&#038;showpost=0&#038;ver=3.2.1></script></body><script>_addload(function(){});</script></html>
