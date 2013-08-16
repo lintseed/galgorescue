@@ -1,0 +1,7 @@
+toro1.jpg|1|
+toro2.jpg|2|
+toro3.jpg|3|
+toro4.jpg|4|
+toro5.jpg|5|
+toro6.jpg|6|
+toro7.jpg|7|

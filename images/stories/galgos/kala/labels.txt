@@ -1,0 +1,4 @@
+kala1.jpg|1|
+kala2.jpg|2|
+kala3.jpg|3|
+kala4.jpg|4|

@@ -1,0 +1,6 @@
+PalomaandVigo3.jpg|1|
+PalomaandVigo4.jpg|2|
+palomaandvigo1.jpg|3|
+palomaandvigo2.jpg|4|
+vigo1.jpg|5|
+vigo2.jpg|6|

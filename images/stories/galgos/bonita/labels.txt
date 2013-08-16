@@ -1,0 +1,6 @@
+bonita1.jpg|1|
+bonita2.jpg|2|
+bonita3.jpg|3|
+bonita4.jpg|4|
+bonita5.jpg|5|
+bonita6.jpg|6|

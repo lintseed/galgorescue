@@ -1,0 +1,8 @@
+refugio1.jpg|1|
+refugio2.jpg|2|
+refugio3.jpg|3|
+refugio4.jpg|4|
+refugio5.jpg|5|
+refugio6.jpg|6|
+refugio7.jpg|7|
+refugio8.jpg|8|

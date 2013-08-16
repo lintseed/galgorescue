@@ -1,0 +1,8 @@
+quia1.jpg|1|1
+quia2.jpg|2|2
+quia3.jpg|3|3
+quia4.jpg|4|4
+quia5.jpg|5|5
+quia6.jpg|6|6
+quia7.jpg|7|7
+quia8.jpg|8|8

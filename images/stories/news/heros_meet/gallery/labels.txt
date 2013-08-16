@@ -1,0 +1,4 @@
+Heros_Abby.jpg|1|1
+Heros_Ancho.jpg|2|2
+Heros_M&G.jpg|3|3
+Heros_Paquito_&_Cervantes.jpg|4|4

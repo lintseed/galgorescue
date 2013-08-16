@@ -1,0 +1,6 @@
+gus1.jpg|1|
+gus2.jpg|2|
+gus3.jpg|3|
+gus4.jpg|4|
+gus5.jpg|5|
+gus6.jpg|6|

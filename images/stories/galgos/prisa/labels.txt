@@ -1,0 +1,6 @@
+prisa1.jpg|1|
+prisa2.jpg|2|
+prisa3.jpg|3|
+prisa4.jpg|4|
+prisa5.jpg|5|
+prisa6.jpg|6|
